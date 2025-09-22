@@ -46,8 +46,6 @@ public class LanguageCodeConverter {
                 languageCodeToLanguage.put(parts[0], parts[1]);
                 languageToLanguageCode.put(parts[0], parts[1]);
 
-
-
             }
 
         } catch (IOException | URISyntaxException ex) {
