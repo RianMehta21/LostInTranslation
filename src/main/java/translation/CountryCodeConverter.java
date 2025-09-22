@@ -40,7 +40,7 @@ public class CountryCodeConverter {
             iterator.next(); // skip the first line
             while (iterator.hasNext()) {
                 String line = iterator.next();
-                String[] parts = line.split("\t");\
+                String[] parts = line.split("\t");
                 String countryCode;
                 String countryName;
 
