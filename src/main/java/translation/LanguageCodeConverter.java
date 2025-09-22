@@ -38,13 +38,15 @@ public class LanguageCodeConverter {
             List<String> lines = Files.readAllLines(Paths.get(getClass()
                     .getClassLoader().getResource(filename).toURI()));
 
+            String line = null;
             Iterator<String> iterator = lines.iterator();
             iterator.next(); // skip the first line
             while (iterator.hasNext()) {
-                String line = iterator.next();
-                String [] parts = line.split(",");
-                languageCodeToLanguage.put(parts[0], parts[1]);
+                line = iterator.next();
+                String[] parts = line.split("\t");
+                languageCodeToLanguage.put(parts[1], parts[0]);
                 languageToLanguageCode.put(parts[0], parts[1]);
+
 
             }
 
