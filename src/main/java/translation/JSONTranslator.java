@@ -78,6 +78,7 @@ public class JSONTranslator implements Translator {
     public List<String> getLanguageCodes() {
         // TODO Task C: return a copy of the language codes
         return new ArrayList<>(languageCodes);
+
     }
 
     @Override
